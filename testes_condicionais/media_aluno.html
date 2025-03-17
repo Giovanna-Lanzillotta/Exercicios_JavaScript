@@ -15,13 +15,17 @@ A mensagem "Aprovado com Distinção", se a média for igual a dez.
         nota1 = parseFloat(prompt("Digite a primeira nota do aluno: "))
         nota2 = parseFloat(prompt("Digite a segunda nota do aluno: "))
 
-        media = ((nota1 + nota2)/media).toFixed(2)
+        media = ((nota1 + nota2)/2).toFixed(2)
 
         if (media == 10){
             document.write("A média = "+media+"<br>")
-            document.write("Aprovado com Distinção")
+            document.write("🏅Aprovado com Distinção")
         }else if(media >=7){
-
+            document.write("A média = "+media+"<br>")
+            document.write("🎉Aprovado")
+        }else{
+            document.write("A média = "+media+"<br>")
+            document.write("💣Reprovado")
         }
     </script>
 </head>
