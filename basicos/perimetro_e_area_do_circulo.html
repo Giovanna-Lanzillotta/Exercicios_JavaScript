@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>perimetro e area do circulo</title>
+    <script>
+/*01. Escreva um programa que pede o raio de um círculo, e em seguida exiba o perímetro e área do círculo*/
+
+        var raio, area, perimetro
+
+        raio = parseFloat(prompt("Digite o raio do círculo: "))
+        area = (Math.PI * (raio*raio)).toFixed(3)
+        perimetro = (2*(Math.PI)*raio).toFixed(3)
+
+        document.write("A área do círculo é:"+area+"<br>")
+        document.write("O perímetro do círculo é: "+perimetro)
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
