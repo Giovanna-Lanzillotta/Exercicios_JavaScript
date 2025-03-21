@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>maior e menor numero</title>
+    <script>
+        /*5. Faça uma script que leia três números inteiros, em seguida mostre o maior e menor deles*/
+
+        var numero1,numero2,numero3
+
+        numero1 = parseInt(prompt("Digite um número"))
+        numero2 = parseInt(prompt("Digite outro número"))
+        numero3 = parseInt(prompt("Digite mais número numero")) 
+
+        if((numero1 > numero2)&&(numero1 > numero3)){
+            maior = numero1
+        }else if((numero2 > numero1)&&(numero2 > numero3)){
+            maior = numero2
+        }else{
+            maior = numero3
+         }
+
+         if((numero1 < numero2)&&(numero1 < numero3)){
+            menor = numero1
+        }else if((numero2 < numero1)&&(numero2 < numero3)){
+            menor = numero2
+        }else{
+            menor = numero3
+         }
+         document.write("Números: "+numero1+ " - " +numero2+" - " +numero3+"<br>")
+         document.write("É o maior número: "+maior+"<br>")
+         document.write("É o menor número: "+menor)
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

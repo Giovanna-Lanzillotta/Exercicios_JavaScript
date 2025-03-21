@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>maior numero</title>
+    <script>
+        /*3. Faça uma script que leia três números inteiros e mostre o maior deles*/
+        var numero1, numero2, numero3
+
+        numero1 = parseInt(prompt("Digite um número inteiro: "))
+        numero2 = parseInt(prompt("Digite outro número inteiro: "))
+        numero3 = parseInt(prompt("Digite outro número inteiro: "))
+
+        if((numero1 > numero2)&&(numero1 > numero3)){
+            document.write("O "+numero1+" é maior que "+numero2+" e o "+numero3)
+        }else if((numero2 > numero1)&&(numero2 > numero3)){
+            document.write("O "+numero2+" é maior que "+numero1+" e o "+numero3)
+        }else{
+            document.write("O "+numero3+" é maior que "+numero1+" e o "+numero2)
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

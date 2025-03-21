@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 6</title>
+    <script>
+    /*6. Faça um script que leia três números e mostre-os em ordem decrescente.*/
+
+    var numero1,numero2,numero3,maior,meio,menor
+
+    numero1 = parseFloat(prompt("Digite o primeiro némero:"))
+    numero2 = parseFloat(prompt("Digite o segundo número:"))
+    numero3 = parseFloat(prompt("Digite o terceiro número:"))
+
+    if((numero1 > numero2)&&(numero1 > numero3)){
+            maior = numero1
+        }else if((numero2 > numero1)&&(numero2 > numero3)){
+            maior = numero2
+        }else if ((numero3 > numero2)&&(numero3 > numero1)){
+            maior = numero3
+         }
+
+         if((numero1 < numero2)&&(numero1 < numero3)){
+            menor = numero1
+        }else if((numero2 < numero1)&&(numero2 < numero3)){
+            menor = numero2
+        }else if ((numero3 < numero2)&&(numero3 < numero1)){
+            menor = numero3
+         }
+
+         if((numero1 > numero2)&&(numero1 < numero3)||(numero1 < numero2)&&(numero1 > numero3)){
+            meio = numero1
+        }else if((numero2 > numero1)&&(numero2 < numero3)||(numero2 < numero1)&&(numero2 > numero3)){
+            meio = numero2
+        }else if ((numero3 > numero2)&&(numero3 < numero1)||(numero3 < numero2)&&(numero3 > numero1)){
+            meio = numero3
+         }
+        
+         document.write("A ordem decrescente é " +maior+" > "+meio+" > "+menor)
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

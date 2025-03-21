@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 17</title>
+    <script>/*
+17. Faça um script que leia um número inteiro menor que 1000 e imprima a quantidade de
+ centenas, dezenas e unidades do mesmo.
+Observando os termos no plural a colocação do "e", da vírgula entre outros. Exemplo:       
+    326 = 3 centenas, 2 dezenas e 6 unidades
+    12 = 1 dezena e 2 unidades 
+Testar com: 326, 300, 100, 320, 310,305, 301, 101, 311, 111, 25, 20, 10, 21, 11, 1, 7 e 16*/
+
+        var numero,centena,dezena,unidade
+        numero= parseInt(prompt("Digte um número inteiro menor que 1000"))
+
+        if(numero < 1000){
+            centena = parseInt(numero /100)
+            dezena = parseInt((numero % 100)/10)
+            unidade = parseInt(numero % 10)
+        }else{
+            alert("Numero maior que 1000!!!"+"\n Tente novamente")
+        }
+document.write("O número "+numero+" possui "+centena+" centenas"+","+dezena+" dezenas e "+unidade+" unidades")
+       
+
+</script>
+</head>
+<body>
+    
+</body>
+</html>

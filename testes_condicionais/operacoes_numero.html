@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 20</title>
+    <script>/*
+20. Faça um script que leia 2 números e em seguida pergunte ao usuário qual operação ele deseja realizar. 
+O resultado da operação deve ser acompanhado de uma frase que diga se o número é:
+    par ou ímpar;
+    positivo ou negativo;
+    inteiro ou decimal.*/ 
+
+    var numero1,numero2,operacao,resultado,resultado_par_ou_impar,resultado_postivo_ou_negativo,resultado_decimal_ou_inteiro
+
+    numero1 = parseFloat(prompt("Digite um numero"))
+    numero2 = parseFloat(prompt("Digite outro numero"))
+
+    operacao = parseInt(prompt("Qual operação você deseja realizar"+"\n 1 - Adição"+"\n 2 -Subtração"
+    +"\n 3 - Multiplicaçãpo"+"\n 4 - Divisão"))
+
+    switch(operacao){
+        case 1:
+            resultado = numero1 + numero2
+            break
+        case 2:
+            resultado = numero1 - numero2
+            break
+        case 3:
+            resultado = numero1 * numero2
+            break
+        case 4:
+            resultado = numero1 / numero2
+            break
+        default:
+            alert("opção invalida")
+            break
+                }
+        if(resultado % 2 == 0){
+            resultado_par_ou_impar = "Par"
+        }else{
+            resultado_par_ou_impar = "Ímpar"
+        }
+        if(resultado >= 0){
+            resultado_postivo_ou_negativo = "Positivo"
+        }else if(resultado <0){
+            resultado_postivo_ou_negativo = "Negativo"
+        }
+
+        if(numero1 % numero2 !== 0){
+            resultado_decimal_ou_inteiro = "Decimal"
+        }else{
+            resultado_decimal_ou_inteiro = "Inteiro"
+        }
+        document.write("O resultado é = "+resultado+"<br>")
+        document.write(resultado_par_ou_impar+"<br>")
+        document.write(resultado_postivo_ou_negativo+"<br>")
+        document.write(resultado_decimal_ou_inteiro)
+
+
+</script>
+</head>
+<body>
+    
+</body>
+</html>

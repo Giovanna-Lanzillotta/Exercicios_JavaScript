@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 23</title>
+    <script>
+/*
+    23. Uma fruteira está vendendo frutas com a seguinte tabela de preços:
+                                  Até 5 Kg                 Acima de 5 Kg
+            Morango             R$ 2,50 por Kg              R$ 2,20 por Kg
+            Maçã                R$ 1,80 por Kg              R$ 1,50 por Kg
+Se o cliente comprar mais de 8 Kg em frutas ou o valor total da compra ultrapassar R$ 25,00,
+receberá ainda um desconto de 10% sobre este total. 
+Escreva um algoritmo para ler a quantidade (em Kg) de morangos e a quantidade (em Kg) de maças adquiridas 
+e escreva o valor a ser pago pelo cliente.*/
+
+var morango_peso,maca_peso,morango_preco,maca_preco,desconto_morango,total_morango,desconto_maca,total_maca,valor_total
+        morango_peso = parseFloat(prompt("Quantos kg de morangos"))
+        maca_peso = parseFloat(prompt("Quantos kg de maça"))
+
+        if(morango_peso <=5){
+            morango_preco = morango_peso * 2.50
+            total_morango = morango_preco 
+
+            }else if(morango_peso >= 5){
+                morango_preco = morango_peso * 2.20
+                total_morango = morango_preco
+
+            }if((morango_peso >=8)||(morango_preco>25)){
+                desconto_morango = morango_preco * 0.10 
+                total_morango = morango_preco + desconto_morango
+            }
+
+            if(maca_peso <=5){
+            maca_preco = maca_peso * 1.80
+            total_maca = maca_preco 
+
+            }else if(maca_peso >= 5){
+                maca_preco = maca_peso * 1.50
+                total_maca = maca_preco
+
+            }if((maca_peso >=8)||(maca_preco>25)){
+                desconto_maca = maca_preco * 0.10 
+                total_maca = maca_preco + desconto_maca
+            }
+            valor_total = total_maca + total_morango
+
+            document.write("🍓 A quantidade (em Kg) de morangos:"+morango_peso+"<br>")
+            document.write("🍎 A quantidade (em Kg) de maçãs:"+maca_peso+"<br>")
+            document.write("💰 O valor a ser pago é:"+valor_total)
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
