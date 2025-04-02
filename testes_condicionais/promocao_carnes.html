@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 24</title>
+    <script>/*
+24. O Hipermercado Tabajara está com uma promoção de carnes que é imperdível. Confira:
+                  Até 5 Kg                Acima de 5 Kg
+File Duplo        R$ 4,90 por Kg          R$ 5,80 por Kg
+Alcatra           R$ 5,90 por Kg          R$ 6,80 por Kg
+Picanha           R$ 6,90 por Kg          R$ 7,80 por Kg
+Para atender a todos os clientes, cada cliente poderá levar apenas um dos tipos de carne da promoção,
+porém não há limites para a quantidade de carne por cliente. Se compra for feita no cartão Tabajara o cliente
+receberá ainda um desconto de 5% sobre o total a compra. 
+Escreva um script que peça o tipo e a quantidade de carne comprada pelo usuário e gere um cupom fiscal, 
+contendo as informações da compra: tipo e quantidade de carne, preço total, tipo de pagamento, valor do desconto
+e valor a pagar.*/
+        var tipo,quilo,cupom,preco,preco_total,valor_desconto,valor_pagar,tipoPagamento,carne
+        tipo = parseInt(prompt("Qual o tipo de carne:\n1-Filé Duplo\n2-Alcatra\n3-Picanha"))
+        quilo = parseFloat(prompt("Quantos quilos?"))
+        switch(tipo){
+            case 1:
+                carne = "File Duplo" 
+                if(quilo < 5){
+                    preco = 4.90 * quilo
+                }else{
+                    preco = 5.80 * quilo
+                }
+                break
+                case 2:
+                    carne ="Alcatra"
+                    if(quilo < 5){
+                        preco = 5.90 * quilo
+                    }else{
+                        preco = 6.80 * quilo
+                    }
+                    break
+                case 3:
+                    carne = "Picanha"
+                    if(quilo <5){
+                        preco = 6.90 * quilo
+                    }else{
+                        preco = 7.80 * quilo
+                    }
+        }
+        var cartao = prompt("O cliente possui cartão tabajara? \n s - sim")
+        if(cartao == "s"){
+            tipoPagamento = "cartão Tabajara"
+            valor_desconto = (preco * 0.05).toFixed(2)
+            preco_total = (preco - valor_desconto).toFixed(2)
+            //document.write("O preço é de R$:"+preco_total+"<br>")
+        }else{
+            valor_desconto = " sem desconto"
+            preco_total = preco
+            tipoPagamento = "Outros"
+           // document.write("O preço é de R$:"+preco+"<br>")
+        }
+        document.write("Preço total R$"+preco+"<br>")
+        document.write("O tipo da carne:"+carne+"<br>")
+        document.write("Foi comprado "+quilo+" quilos<br>")
+        document.write("Tipo de pagamento:"+tipoPagamento+"<br>")
+        document.write("O valor do desconto é R$"+valor_desconto+"<br>")
+        document.write("O preço é de R$:"+preco_total+"<br>")
+       
+    </script>
+</head>
+<body>
+
+</body>
+
+</html>

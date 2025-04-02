@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*4. 
+Faça um script que pede dois inteiros e armazene eles em duas variáveis.
+Em seguida, troque o valor das variáveis, invertendo e exibindo o antes e o depois em uma janela de alert.
+*/
+
+        var numero1, numero2
+        numero1 = parseInt(prompt("Insira um número inteiro: "))
+        numero2 = parseInt(prompt("Insira outro número inteiro: "))
+
+        var auxiliar = numero1
+        var antes_numero1 = numero1
+        var antes_numero2 = numero2
+
+        numero1 = numero2
+        numero2 = auxiliar
+
+        alert("ANTES:\n"+
+        "numero1 = " +antes_numero1+"\n"+
+        "numero2 = "+antes_numero2+
+        "\n\n"+
+        "DEPOIS:\n"+
+        "numero1= "+numero1+"\n"+
+        "numero2 ="+numero2
+        )
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

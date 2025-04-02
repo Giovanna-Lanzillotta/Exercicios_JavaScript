@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>/*
+    15. Faça um script que peça uma data no formato dd/mm/aaaa e determine se a mesma é uma data válida.*/
+    var dia,mes, ano
+
+    var dia, mes, ano
+
+dia = parseInt(prompt("Digite um Dia"))
+mes = parseInt(prompt("Digite um Mês"))
+ano = parseInt(prompt("Digite um Ano"))
+
+switch (mes) {
+    case 1:
+        if ((dia >= 1) && (dia <= 31)) {
+            m = "janeiro"
+        } else {
+            alert("Data inválida")
+        }
+        break
+    case 2:
+        if (ano % 4 == 0) {
+            m = "fevereiro"
+            if ((dia >= 1) && (dia <= 29)) {
+            }
+        } else if ((dia >= 1) && (dia <= 28)) {
+            m = "fevereiro"
+        } else {
+            alert("Data inválida")
+        }
+        break
+    case 3:
+        if ((dia >= 1) && (dia <= 31)) {
+            m = "março"
+        } else {
+            alert("Data inválida")
+        }
+        break
+    case 4:
+        if ((dia >= 1) && (dia <= 31)) {
+            m = "abril"
+        } else {
+            alert("Data inválida")
+        }
+        break
+    case 5:
+        if ((dia >= 1) && (dia <= 31)) {
+            m = "maio"
+        } else {
+            alert("Data inválida")
+        }
+        break
+    case 6:
+        if ((dia >= 1) && (dia <= 30)) {
+            m = "junho"
+        } else {
+            alert("Data inválida")
+        }
+        break
+    case 7:
+        if ((dia >= 1) && (dia <= 31)) {
+            m = "julho"
+        } else {
+            alert("Data inválida")
+        }
+        break
+    case 8:
+        if ((dia >= 1) && (dia <= 31)) {
+            m = "agosto"
+        } else {
+            alert("Data inválida")
+        }
+        break
+    case 9:
+        if ((dia >= 1) && (dia <= 30)) {
+            m = "setembro"
+        } else {
+            alert("Data inválida")
+        }
+        break
+    case 10:
+        if ((dia >= 1) && (dia <= 31)) {
+            m = "outubro"
+        } else {
+            alert("Data inválida")
+        }
+        break
+    case 11:
+        if ((dia >= 1) && (dia <= 30)) {
+            m = "novembro"
+        } else {
+            alert("Data inválida")
+        }
+        break
+    case 12:
+        if ((dia >= 1) && (dia <= 31)) {
+            m = "dezembro"
+        } else {
+            alert("Data inválida")
+        }
+        break
+}
+alert("Data válida")
+document.write("Dia: " + dia + "<br>")
+document.write("Mês: " + m + "<br>")
+document.write("Ano: " + ano + "<br>")
+document.write(dia + "/" + mes + "/" + ano)    
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
