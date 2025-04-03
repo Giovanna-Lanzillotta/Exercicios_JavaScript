@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*1.Faça um programa que peça uma nota, entre zero e dez. Mostre uma mensagem caso o valor seja inválido e 
+        continue pedindo até que o usuário informe um valor válido. */
+
+        var nota
+        var laco =  true
+        var resposta = true
+
+        while(laco){
+            nota = parseFloat(prompt("Digite uma nota de o a 10: "))
+            if((nota >=0 )&& (nota <= 10)){
+                laco = confirm("Deseja Continuar?")
+                document.write("Nota: "+nota+"<br>")
+            }else{
+                alert("Valor inválido")
+                resposta = confirm("Tente Novamente! Informe um valor válido")
+
+            }
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

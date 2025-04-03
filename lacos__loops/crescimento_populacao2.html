@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 5</title>
+    <script>/*
+5.Altere o programa anterior permitindo ao usuário informar as populações e as taxas de crescimento iniciais. 
+Valide a entrada e permita repetir a operação.*/
+        
+        var populacaoA = parseFloat(prompt("informe a população de A"))
+        var populacaoB = parseFloat(prompt("informe a população de B"))
+        var taxaA = parseFloat(prompt("informe a taxa de crescimento de A"))
+        var taxaB = parseFloat(prompt("informe a taxa de crescimento de B"))
+        var ano = 0
+        var resposta = true
+
+        var populacaoInicialA = populacaoA
+        var populacaoInicialB = populacaoB
+
+        while (populacaoA < populacaoB) {
+            populacaoA += populacaoA * taxaA
+            populacaoB += populacaoB * taxaB
+
+            ano = ano + 1
+            anoTotal = ano + 1
+
+        }
+        document.write("população A: " + populacaoInicialA + " taxa A: " + taxaA + "%<br>")
+        document.write("população A: " + populacaoInicialB + " taxa B: " + taxaB + "%<br>")
+        document.write("A população A passou a população B em " + anoTotal + " anos ")
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 4</title>
+    <script>/*
+4.Supondo que a população de um país A seja da ordem de 80000 habitantes com uma taxa anual de crescimento de 3% 
+e que a população de B seja 200000 habitantes com uma taxa de crescimento de 1.5%.
+Faça um programa que calcule e escreva o número de anos necessários para que a população do país A 
+ultrapasse ou iguale a população do país B, mantidas as taxas de crescimento.*/
+       
+        var taxaA = 0.03
+        var taxaB = 0.15 
+        var populacaoA = 80000
+        var populacaoB = 200000
+        var ano = 0
+        var resposta = true
+
+        while (populacaoA < populacaoB) {
+            populacaoA += populacaoA * taxaA
+            populacaoB += populacaoB * taxaB
+            
+            ano = ano + 1
+            anoTotal = ano + 1
+
+            }
+            document.write("A população A passou a população B em " + anoTotal + " anos ")
+               
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>
