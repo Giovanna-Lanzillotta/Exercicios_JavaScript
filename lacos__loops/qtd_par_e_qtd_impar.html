@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 14.Faça um programa que peça 10 números inteiros, calcule e mostre a quantidade de números pares e a 
+        // quantidade de números ímpares.
+
+        var numero
+        var qtdPar = 0
+        var qtdImpar = 0
+
+        for(var i = 0;i < 10;i++){
+            numero = parseInt(prompt("Digite um número inteiro"))
+            if(numero % 2 == 0 ){
+                qtdPar +=1
+            }else{
+                qtdImpar +=1
+            }
+        document.write("   "+numero+"   ")
+        }
+        document.write("<br>A quantidade de números pares é "+qtdPar+"<br>")
+        document.write("A quantidade de números ímpares é "+qtdImpar)
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

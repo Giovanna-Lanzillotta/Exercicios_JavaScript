@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex 10</title>
+    <script>
+        /*10. Faça um programa que receba dois números inteiros e gere os números inteiros que estão no intervalo compreendido por eles.*/
+
+        var numeroInicial,numeroFinal
+
+        numeroInicial = parseInt(prompt("Insira um número inteiro inicial:"))
+        numeroFinal = parseInt(prompt("Insira um número inteiro final: "))
+        
+        var i = 0;
+        var a = 0;
+
+        document.write("INTERVALO FECHADO <br>")
+        for(var i = numeroInicial; i <= numeroFinal; i++){
+            document.write("  "+i+"  ")
+        }
+
+        document.write("<br>INTERVALO ABERTO <br>")
+        for(var a = numeroInicial + 1; a <= numeroFinal + 1; a++){
+            document.write("  "+a+"  ")
+        }
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
