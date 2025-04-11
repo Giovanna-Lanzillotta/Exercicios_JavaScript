@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<!-- 20.Altere o programa de cálculo do fatorial, permitindo ao usuário calcular o fatorial várias vezes e 
+limitando o fatorial a números inteiros positivos e menores que 16. -->
+<script>
+    var resposta = true
+    
+    while(resposta){
+        var numero = parseInt(prompt("Digite um número inteiro positivo menor que 16: "))
+
+        if(numero < 0){
+            alert("Precisar ser número inteiro positivo!")
+            resposta = false
+        }else if((numero > 16)){
+            alert("Precisa ser menor que 16")
+            resposta = false
+
+        }else{
+            var i = 0
+        for(var i =numero - 1;i >= 1;i--){
+            numero *= i
+        }
+        document.write("O fatorial é "+numero)
+        resposta = confirm("Deseja continuar?")
+        }
+    }
+    
+</script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+/* 18.Faça um programa que, dado um conjunto de N números, determine o menor valor, o maior valor e a
+soma dos valores. */
+
+        var maior, menor
+        var resposta = true
+        var soma = 0
+        while(resposta){
+            var numero = parseFloat(prompt("Digite um número: "))
+            soma +=numero
+            if(numero > menor){
+                maior = numero
+            }else{
+                    menor = numero
+                }
+                resposta = confirm("Deseja continuar??")
+            }
+            document.write("Soma "+soma+"<br>")
+            document.write("O maior valor é o "+maior+"<br>")
+            document.write("O menor valor é o "+menor)
+        
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
